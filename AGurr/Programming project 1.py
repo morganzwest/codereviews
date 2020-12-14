@@ -347,3 +347,46 @@ elif YES == 1:
         f.write(high_scores_lines[y])
         y = y + 1
     f.close
+
+    
+    """Numbers align to code
+
+22: What happens if I enter an invalid char?
+22: Variables that are not global are conventionally lowercase
+24: This could be more line efficient -> https://cmdlinetips.com/2016/01/opening-a-file-in-python-using-with-statement/
+31: Variables that are not global are conventionally lowercase
+33: Couldn't you use a for loop?
+eg.
+
+for line in user_file_lines:
+	#code
+40: Variables that are not global are conventionally lowercase
+41: Did you consider security? You could implement this -> https://pypi.org/project/stdiomask/
+54: Nice file check
+59-66: This will still run even if the file doesn't exist.
+70: Variables that are not global are conventionally lowercase
+75: You don't check the secondary confirmed password
+99, 110, 111: Variables that are not global are conventionally lowercase
+101: Couldn't you use a for loop?
+eg.
+
+for line in user_file_lines:
+	#code
+170: You could probably use a for loop for this but it is not a huge deal as long as it is commented
+181: You can move the Ln180 statement into Ln181
+191, 195, 199, 201, 208, 224, 228, 232, 234: I think you are "re-rolling". Why wouldn't you put this in a function and just recall per die
+242: You have actually made z a type tuple. Replace this line with "z += 1"
+258 -> 289: I am not sure how you can make this more efficient but I think you could use a function to cut the "blah blah" on the screen
+293: You can use a for loop
+300: Nice check
+337: Nice return except
+346: You can use a for loop
+
+Overall:
+It works
+you can make it more efficient
+you need to comment the bits where i especially had to guess
+you should comment "not obvious" regions of code
+you should standardize your style (recommend PEP8 styling)
+other than that: You have morgan's approval"""
+    
